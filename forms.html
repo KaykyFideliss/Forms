@@ -7,40 +7,57 @@
     <title>calculadora com php</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Calculadora de Simples Nacional</h1>
-            <p>Preencha os campos abaixo para calcular o valor do Simples Nacional.</p>
+    <header class="bg-light py-5">
+        <div class="container text-center">
+            <h1 class="display-5 fw-bold text-success">Calculadora de Simples Nacional</h1>
+            <p class="lead">Preencha os campos abaixo para calcular o valor do Simples Nacional.</p>
         </div>
-    </header
-    <nav>
+    </header>
         <div class="container-nav">
             <ul>
-                <li><a href="http://localhost/calculadora/calculadora.php">1</a></li>
-                <li><a href="http://localhost/calculadora/resultado.php">2</a></li>
-                <li><a href="http://localhost/calculadora/calculadora.php">3</a></li>
-                <li><a href="http://localhost/calculadora/resultado.php">4</a></li>
-            </ul>
+             <li><a href="http://localhost/calculadora/calculadora.php">ANEXO 1</a></li>
+             <li><a href="http://localhost/calculadora/resultado.php">ANEXO 2</a></li>
+             <li><a href="http://localhost/calculadora/calculadora.php">ANEXO 3</a></li>
+             <li><a href="http://localhost/calculadora/resultado.php">ANEXO 4</a></li>
+             <li><a href="http://localhost/calculadora/calculadora.php">ANEXO 5</a></li>
+             <li><a href="http://localhost/calculadora/resultado.php">ANEXO 6</a></li>
+           </ul>
         </div>
-   
-    <section>
-        <div class="container-form">
+    <section class="py-4">
+  <div class="container-form">
+    <form action="http://localhost/calculadora/calculadora.php" method="post">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="aliquota-nominal" class="form-label">ALIQUOTA NOMINAL</label>
+          <input type="text" class="form-control" id="aliquota-nominal" name="aliquota-nominal" required>
+        </div>
 
-          <form action="http://localhost/calculadora/calculadora.php" method="post">
+        <div class="col-md-6">
+          <label for="rba" class="form-label">RBA</label>
+          <input type="text" class="form-control" id="rba" name="rba" required>
+        </div>
 
-                <label for="">ALIQUOTA NOMINAL</label>
-                    <input type="text" id="aliquota-nominal" name="aliquota-nominal" required>
-                <label for="">RBA</label>
-                    <input type="text" id="rba" name="rba" required>
-                <label for=""> DEDUÇÃO</label> 
-                    <input type="text" id="deducao" name="deducao" required>
-                <label for="">FATURAMENTO MENSAL</label>
-                <input type="text" id="faturamento-mensal" name="faturamento-mensal" required>
-                <div class="button">
-                    <button type="submit" >ENVIAR</button>
-            </div>  
-            </form>
-    </section>
+        <div class="col-md-6">
+          <label for="deducao" class="form-label">DEDUÇÃO</label>
+          <input type="text" class="form-control" id="deducao" name="deducao" required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="faturamento-mensal" class="form-label">FATURAMENTO MENSAL</label>
+          <input type="text" class="form-control" id="faturamento-mensal" name="faturamento-mensal" required>
+        </div>
+
+        <div class="col-12 text-center mt-3">
+          <button type="submit" class="btn-enviar">ENVIAR</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+
+
     
 </body>
 </html>
