@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>calculadora com php</title>
+</head>
+<body>
+    <header class="bg-light py-5">
+         <div class="container text-center">
+          <p class="lead">ANEXO 4</p>
+            <h1 class="display-5 fw-bold text-success">Calculadora de Simples Nacional</h1>
+            <p class="lead">Preencha os campos abaixo para calcular o valor do Simples Nacional.</p>
+        </div>
+    </header>
+        <div class="container-nav">
+            <ul>
+             <li><a href="forms-anexo1.html">ANEXO 1</a></li>
+             <li><a href="forms-anexo2.html">ANEXO 2</a></li>
+             <li><a href="forms-anexo3.html">ANEXO 3</a></li>
+             <li><a href="forms-anexo4.html">ANEXO 4</a></li>
+             <li><a href="forms-anexo5.html">ANEXO 5</a></li>
+             <li><a href="forms-anexo6.html">ANEXO 6</a></li>
+           </ul>
+        </div>
+    <section class="py-4">
+  <div class="container-form">
+    <form action="http://localhost/calculadora/php/Anexo4.php" method="post">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="aliquota-nominal" class="form-label">ALIQUOTA NOMINAL</label>
+          <input type="text" class="form-control" id="aliquota-nominal" name="aliquota-nominal" required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="rba" class="form-label">RBA</label>
+          <input type="text" class="form-control" id="rba" name="rba" required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="deducao" class="form-label">DEDUÇÃO</label>
+          <input type="text" class="form-control" id="deducao" name="deducao" required>
+        </div>
+
+        <div class="col-md-6">
+          <label for="faturamento-mensal" class="form-label">FATURAMENTO MENSAL</label>
+          <input type="text" class="form-control" id="faturamento-mensal" name="faturamento-mensal" required>
+        </div>
+
+        <div class="col-12 text-center mt-3">
+          <button type="submit" class="btn-enviar">ENVIAR</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>  <!-- Overlay de carregamento -->
+  <div id="loader-overlay">
+    <div class="progress-bar"></div>
+  </div>
+  <!-- LOADER -->
+  <div id="loader" style="display: flex;">
+    Carregando...
+    <div class="progress-bar">
+      <div class="progress-bar-fill" id="progress-bar-fill"></div>
+    </div>
+  </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
